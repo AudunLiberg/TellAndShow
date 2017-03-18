@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Tell and Show</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="style.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://use.fontawesome.com/77ef84c917.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="search-bar">
+				<div id="search-button" onclick="prepareSearch()" title="Search">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>
+				<input type="text" id="search" placeholder="Tell us what you're looking for &hellip;" autofocus>
+			</div>
+			<div id="search-results">
+				<div id="frame-wrapper">
+					<div id="frames"></div>
+					<div id="result-number">
+						<span id="result-number-current"></span>
+						/
+						<span id="result-number-total"></span>
+					</div>
+					<a id="frame-overlay" href=""></a>
+					<div id="loading-overlay">
+						Loading results &hellip;<br>
+						<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+					</div>
+				</div>
+				<div id="controls">
+					<div>
+						<div id="result-prev" class="arrow unselectable" onclick="prevResult()">&#9668;</div>
+						<div id="result-next" class="arrow unselectable" onclick="nextResult()">&#9658;</div>
+					</div>
+					<a id="site-title" href=""></a>
+				</div>
+			</div>
+			<div id="no-search-results"></div>
+		</div>
+	</body>
+</html>
